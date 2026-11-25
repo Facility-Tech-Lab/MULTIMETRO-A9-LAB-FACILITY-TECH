@@ -30,6 +30,9 @@ if not exist "%DEST%" (
 echo Copiando o plugin...
 copy /Y "%ORIGEM%" "%DEST%\%DLL%"
 
+echo Desbloqueando o arquivo (Windows SmartScreen)...
+powershell -NoProfile -Command "Unblock-File -Path '%DEST%\%DLL%'" >nul 2>nul
+
 echo.
 if exist "%DEST%\%DLL%" (
   echo [OK] Plugin instalado com sucesso!
