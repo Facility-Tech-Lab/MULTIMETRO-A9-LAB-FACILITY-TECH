@@ -1,0 +1,37 @@
+FACILITY TECH LAB - SOMENTE MULTIMETRO JTX A9 (WINDOWS x64)
+============================================================
+
+Versao enxuta para os tecnicos: NAO possui QUICK 2008 nem ATTEN 862D.
+Apenas o multimetro JTX A9 dentro do OBS Studio.
+
+Conteudo:
+  facility-tech-meter.dll .... plugin Windows 64 bits
+  instalar-windows.bat ....... instalacao automatica
+  preview-meter.png .......... como fica o painel
+
+INSTALACAO
+----------
+1. Feche o OBS Studio.
+2. Dê duplo clique em "instalar-windows.bat".
+   Ele copia o DLL para:
+   %APPDATA%\obs-studio\plugins\facility-tech-meter\bin\
+3. Abra o OBS novamente.
+
+USO
+---
+No OBS: + -> Source -> "Facility Tech Lab - Multímetro JTX A9"
+
+1. Selecione a porta COM do multimetro.
+2. Clique em "Conectar multimetro".
+3. O painel passa a mostrar tensao e corrente em tempo real.
+
+O painel e SOMENTE LEITURA: mude o modo no multimetro fisico
+(fonte / diodo / voltagem / USB) e o OBS acompanha automaticamente.
+
+Para desligar, clique em "Desconectar multimetro".
+
+REQUISITOS
+----------
+- OBS Studio 33.x (64 bits)
+- Windows 10 ou 11 (64 bits)
+- Multimetro JTX A9 conectado por USB
